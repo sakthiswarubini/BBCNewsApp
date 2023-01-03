@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="193755" started-at="2023-01-03T19:38:07 GMT" finished-at="2023-01-03T19:41:20 GMT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="193755" started-at="2023-01-03T19:38:07 GMT" finished-at="2023-01-03T19:41:20 GMT">
+      <class name="testrunner.Runner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.Runner@1068e947]" name="setUpClass" is-config="true" duration-ms="1923" started-at="2023-01-03T19:38:07 GMT" finished-at="2023-01-03T19:38:09 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b000fe6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" duration-ms="69978" started-at="2023-01-03T19:38:09 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-03T19:39:19 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to homepage and validate the Home page text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to validate the Home"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" duration-ms="60674" started-at="2023-01-03T19:39:19 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-03T19:40:19 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate navigation bar text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to validate the Navigation bar text"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" duration-ms="59484" started-at="2023-01-03T19:40:19 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-03T19:41:19 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate video page text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Accepatnce testing to validate the video page text"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.Runner@1068e947]" name="tearDownClass" is-config="true" duration-ms="1437" started-at="2023-01-03T19:41:19 GMT" finished-at="2023-01-03T19:41:20 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
