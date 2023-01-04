@@ -1,36 +1,36 @@
+/**
+ * @Project name : BBCNews Automation
+ * @Author : Sakthi
+ * @Description : This file contains elements and methods for Search page
+ */
+
 package com.bbcnews.pageobject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
 import com.bbcnews.actiondriver.Action;
-import com.bbcnews.testbase.BaseClass;
-
-import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class SearchPage extends Action {
 
-	 AndroidDriver driver;
+	AndroidDriver driver;
 
 	@AndroidFindBy(id = "bbc.mobile.news.uk:id/search")
-	private  WebElement searchText;
+	private WebElement searchText;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='England']")
-	private  WebElement selectOption;
+	private WebElement selectOption;
 
 	@AndroidFindBy(id = "bbc.mobile.news.uk:id/activity_news_index_title")
-	private  WebElement indexTitle;
+	private WebElement indexTitle;
 
 	@AndroidFindBy(accessibility = "Navigate up")
-	private  WebElement navigatePage;
+	private WebElement navigatePage;
 
 	@AndroidFindBy(accessibility = "Back")
-	private  WebElement backtohomePage;
+	private WebElement backtohomePage;
 
 	public SearchPage(AndroidDriver driver) {
 		super(driver);
@@ -38,22 +38,22 @@ public class SearchPage extends Action {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	public  void searchPageText(String searchValue) {
+	public void searchPageText(String searchValue) {
 
 		searchText.sendKeys(searchValue);
 	}
 
-	public  void selectTopic() {
+	public void selectTopic() {
 		selectOption.click();
 	}
 
-	public  String searchPageValidation() {
+	public String searchPageValidation() {
 
 		return indexTitle.getText();
 
 	}
 
-	public  HomePage navigateToHomePage() {
+	public HomePage navigateToHomePage() {
 		navigatePage.click();
 		backtohomePage.click();
 		return new HomePage(driver);

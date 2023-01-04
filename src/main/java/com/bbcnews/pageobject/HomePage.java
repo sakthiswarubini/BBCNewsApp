@@ -1,3 +1,9 @@
+/**
+ * @Project name : BBCNews Automation
+ * @Author : Sakthi
+ * @Description : This file contains elements and methods for Home page
+ */
+
 package com.bbcnews.pageobject;
 
 import org.openqa.selenium.WebElement;
@@ -13,16 +19,16 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class HomePage extends Action {
 
-	 AndroidDriver driver;
+	AndroidDriver driver;
 
 	@AndroidFindBy(accessibility = "Video")
-	private  WebElement videoTab;
+	private WebElement videoTab;
 
 	@AndroidFindBy(accessibility = "Search")
-	private  WebElement searchButton;
+	private WebElement searchButton;
 
 	@AndroidFindBy(accessibility = "Top Stories")
-	private  WebElement homePageText;
+	private WebElement homePageText;
 
 	public HomePage(AndroidDriver driver) {
 		super(driver);
@@ -30,17 +36,17 @@ public class HomePage extends Action {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	public  VideoPage clickVideoTab() {
+	public VideoPage clickVideoTab() {
 		videoTab.click();
 		return new VideoPage(driver);
 	}
 
-	public  SearchPage clickSearchButton() {
+	public SearchPage clickSearchButton() {
 		searchButton.click();
 		return new SearchPage(driver);
 	}
 
-	public  String verifyHomePageText() {
+	public String verifyHomePageText() {
 		return homePageText.getAttribute("content-desc");
 
 	}

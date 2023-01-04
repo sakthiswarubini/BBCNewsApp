@@ -2,78 +2,73 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="193755" started-at="2023-01-03T19:38:07 GMT" finished-at="2023-01-03T19:41:20 GMT">
+  <suite name="Suite" duration-ms="165550" started-at="2023-01-04T11:17:48 GMT" finished-at="2023-01-04T11:20:33 GMT">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="193755" started-at="2023-01-03T19:38:07 GMT" finished-at="2023-01-03T19:41:20 GMT">
-      <class name="testrunner.Runner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.Runner@1068e947]" name="setUpClass" is-config="true" duration-ms="1923" started-at="2023-01-03T19:38:07 GMT" finished-at="2023-01-03T19:38:09 GMT">
+    <test name="Test" duration-ms="165550" started-at="2023-01-04T11:17:48 GMT" finished-at="2023-01-04T11:20:33 GMT">
+      <class name="com.bbcnews.testcase.HomePageTest">
+        <test-method status="PASS" signature="ConfigureAppium()[pri:0, instance:com.bbcnews.testcase.HomePageTest@7c7a06ec]" name="ConfigureAppium" is-config="true" duration-ms="18323" started-at="2023-01-04T11:19:41 GMT" finished-at="2023-01-04T11:19:59 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method status="PASS" signature="homeTest(java.util.HashMap)[pri:0, instance:com.bbcnews.testcase.HomePageTest@7c7a06ec]" name="homeTest" duration-ms="32567" started-at="2023-01-04T11:19:59 GMT" data-provider="getData" finished-at="2023-01-04T11:20:31 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5b000fe6]]>
+                <![CDATA[{password=Qwerty@2022, searchText=England, emailId=appiumusertest1@gmail.com, scrollDownText=Copyright © 2018 BBC}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" duration-ms="69978" started-at="2023-01-03T19:38:09 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-03T19:39:19 GMT">
+        </test-method> <!-- homeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bbcnews.testcase.HomePageTest@7c7a06ec]" name="tearDown" is-config="true" duration-ms="1617" started-at="2023-01-04T11:20:31 GMT" finished-at="2023-01-04T11:20:33 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bbcnews.testcase.HomePageTest -->
+      <class name="com.bbcnews.testcase.SearchPageTest">
+        <test-method status="PASS" signature="ConfigureAppium()[pri:0, instance:com.bbcnews.testcase.SearchPageTest@1d296da]" name="ConfigureAppium" is-config="true" duration-ms="18840" started-at="2023-01-04T11:18:46 GMT" finished-at="2023-01-04T11:19:04 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method status="PASS" signature="searchTest(java.util.HashMap)[pri:0, instance:com.bbcnews.testcase.SearchPageTest@1d296da]" name="searchTest" duration-ms="34907" started-at="2023-01-04T11:19:04 GMT" data-provider="getSearchData" finished-at="2023-01-04T11:19:39 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Navigate to homepage and validate the Home page text"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Acceptance testing to validate the Home"]]>
+                <![CDATA[{password=Qwerty@2022, searchText=England, emailId=appiumusertest1@gmail.com, scrollDownText=Copyright © 2018 BBC}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" duration-ms="60674" started-at="2023-01-03T19:39:19 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-03T19:40:19 GMT">
+        </test-method> <!-- searchTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bbcnews.testcase.SearchPageTest@1d296da]" name="tearDown" is-config="true" duration-ms="1153" started-at="2023-01-04T11:19:39 GMT" finished-at="2023-01-04T11:19:41 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bbcnews.testcase.SearchPageTest -->
+      <class name="com.bbcnews.testcase.VideoPageTest">
+        <test-method status="PASS" signature="ConfigureAppium()[pri:0, instance:com.bbcnews.testcase.VideoPageTest@3754a4bf]" name="ConfigureAppium" is-config="true" duration-ms="22745" started-at="2023-01-04T11:17:48 GMT" finished-at="2023-01-04T11:18:10 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method status="PASS" signature="videoTest(java.util.HashMap)[pri:0, instance:com.bbcnews.testcase.VideoPageTest@3754a4bf]" name="videoTest" duration-ms="32581" started-at="2023-01-04T11:18:11 GMT" data-provider="getAppData" finished-at="2023-01-04T11:18:44 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validate navigation bar text"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Acceptance testing to validate the Navigation bar text"]]>
+                <![CDATA[{password=Qwerty@2022, searchText=England, emailId=appiumusertest1@gmail.com, scrollDownText=Copyright © 2018 BBC}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@1068e947]" name="runScenario" duration-ms="59484" started-at="2023-01-03T19:40:19 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-03T19:41:19 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate video page text"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Accepatnce testing to validate the video page text"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- videoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bbcnews.testcase.VideoPageTest@3754a4bf]" name="tearDown" is-config="true" duration-ms="1867" started-at="2023-01-04T11:18:44 GMT" finished-at="2023-01-04T11:18:46 GMT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.Runner@1068e947]" name="tearDownClass" is-config="true" duration-ms="1437" started-at="2023-01-03T19:41:19 GMT" finished-at="2023-01-03T19:41:20 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- testrunner.Runner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bbcnews.testcase.VideoPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

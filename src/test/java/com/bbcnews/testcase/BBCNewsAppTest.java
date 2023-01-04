@@ -1,3 +1,9 @@
+/**
+ * @Project name : BBCNews Automation
+ * @Author : Sakthi
+ * @Description : This is the TestNG test case file for End to End testing
+ */
+
 package com.bbcnews.testcase;
 
 import org.testng.annotations.DataProvider;
@@ -15,8 +21,6 @@ import com.bbcnews.pageobject.VideoPage;
 import com.bbcnews.testbase.BaseClass;
 
 public class BBCNewsAppTest extends BaseClass {
-
-	
 
 	@Test(dataProvider = "getData")
 	public void e2eTest(HashMap<String, String> input) throws MalformedURLException, InterruptedException {

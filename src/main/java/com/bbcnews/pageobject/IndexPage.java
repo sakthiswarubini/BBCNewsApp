@@ -1,3 +1,9 @@
+/**
+ * @Project name : BBCNews Automation
+ * @Author : Sakthi
+ * @Description : This file contains elements and methods for Index page
+ */
+
 package com.bbcnews.pageobject;
 
 import org.openqa.selenium.WebElement;
@@ -30,8 +36,6 @@ public class IndexPage extends Action {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	
-
 	public SignInPage clickOnSignIn() throws InterruptedException {
 		signIn.click();
 		notification.click();
@@ -39,7 +43,7 @@ public class IndexPage extends Action {
 		Thread.sleep(1000);
 		return new SignInPage(driver);
 	}
-	
+
 	/*
 	 * public void setActivity() { Activity activity = new
 	 * Activity("bbc.mobile.news.uk","bbc.mobile.news.v3.ui.splash.SplashActivity");

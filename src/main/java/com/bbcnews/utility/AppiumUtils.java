@@ -1,3 +1,9 @@
+/**
+ * @Project name : BBCNews Automation
+ * @Author : Sakthi
+ * @Description : This is the utility file to invoke Appium server and parent class to the BaseClass
+ */
+
 package com.bbcnews.utility;
 
 import java.io.File;
@@ -24,15 +30,6 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public class AppiumUtils {
 
 	public static AppiumDriverLocalService service;
-
-	public void scrollAction(AppiumDriver driver) {
-		boolean canScrollMore;
-		do {
-			canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap
-					.of("left", 100, "top", 100, "width", 200, "height", 200, "direction", "down", "percent", 4.0));
-		} while (canScrollMore);
-
-	}
 
 	public List<HashMap<String, String>> getJsonData(String jsonFilePath) throws IOException {
 		// convert json file content to json string

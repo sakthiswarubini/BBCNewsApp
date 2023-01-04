@@ -1,3 +1,9 @@
+/**
+ * @Project name : BBCNews Automation
+ * @Author : Sakthi
+ * @Description : This is the TestNG test case file for Home page
+ */
+
 package com.bbcnews.testcase;
 
 import org.testng.annotations.Test;
@@ -19,9 +25,8 @@ import com.bbcnews.pageobject.SignInPage;
 import com.bbcnews.testbase.BaseClass;
 
 public class HomePageTest extends BaseClass {
-	
 
-	@Test(dataProvider= "getData")
+	@Test(dataProvider = "getData")
 	public void homeTest(HashMap<String, String> input) throws MalformedURLException, InterruptedException {
 
 		SignInPage signInPage = indexPage.clickOnSignIn();
@@ -39,9 +44,9 @@ public class HomePageTest extends BaseClass {
 
 	@DataProvider
 	public Object[][] getData() throws IOException {
-		List<HashMap<String, String>> data =  getJsonData(System.getProperty("user.dir")+"//src//test//java//com//bbcnews//testdata//bbctestdata.json");
+		List<HashMap<String, String>> data = getJsonData(
+				System.getProperty("user.dir") + "//src//test//java//com//bbcnews//testdata//bbctestdata.json");
 		return new Object[][] { { data.get(0) } };
 	}
 
 }
-

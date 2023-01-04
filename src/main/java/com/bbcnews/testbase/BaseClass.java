@@ -1,5 +1,11 @@
-package com.bbcnews.testbase;
+/**
+ * @Project name : BBCNews Automation
+ * @Author : Sakthi
+ * @Description : This is the base class which invoke the App in the emulator and 
+ * once the process finish it will quite the app and server 
+ */
 
+package com.bbcnews.testbase;
 
 import org.testng.annotations.BeforeClass;
 import java.io.FileInputStream;
@@ -37,6 +43,7 @@ public class BaseClass extends AppiumUtils {
 		options.setApp(System.getProperty("user.dir") + "//src//test//java//com//bbcnews//resources//bbcnews.apk");
 		driver = new AndroidDriver(service.getUrl(), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		// driver.manage().deleteAllCookies();
 		indexPage = new IndexPage(driver);
 		return driver;
 
